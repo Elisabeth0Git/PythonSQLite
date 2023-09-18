@@ -6,6 +6,7 @@ with sq.connect('saper.db') as con:
 
 
     cur.execute("""CREATE TABLE IF NOT EXISTS users (
+    user_id INTEGER PRIMARY KEY,
     name TEXT,
     sex INTEGER,
     old INTEGER,
