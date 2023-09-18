@@ -1,11 +1,15 @@
 import sqlite3 as sq
 
 
-con = sq.connect('saper.db')
-cur = con.cursor()  #Cursor
+with sq.connect('saper.db') as con:
+    cur = con.cursor()  #Cursor
 
 
-cur.execute()
+    cur.execute("""CREATE TABLE IF NOT EXISTS users (
+    name TEXT,
+    sex INTEGER,
+    old INTEGER,
+    score INTEGER
+    )""")
 
 
-con.close()
