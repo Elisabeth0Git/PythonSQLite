@@ -12,5 +12,3 @@ with sq.connect('saper.db') as con:
     old INTEGER,
     score INTEGER
     )""")
-
-
