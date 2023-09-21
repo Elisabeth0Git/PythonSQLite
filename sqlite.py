@@ -1,5 +1,11 @@
 import sqlite3 as sq
 
+cars = [
+    ('Audi', 52642),
+    ('Merseces', 57127),
+    ('skoda', 9000),
+    ()
+]
 
 with sq.connect('cars.db') as con:
     cur = con.cursor()
